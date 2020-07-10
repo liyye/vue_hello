@@ -42,6 +42,19 @@
                 if (!this.form.username || !this.form.password) {
                     alert("你的令牌呢？");
                 } else {
+                    // this.$http.get('/api/hello',{params: ""}).then(function(res) {
+                    //     console.log(res, "1111111111")
+                    //     console.log(res.body.code)
+                    //     if(res.body.code == "0") {
+                    //     this.$router.push({ name: "Home", query: { msg: '欢迎来到东临宗' } });
+                    //     } else {
+                            
+                    //     }
+                    //     // 响应成功回调
+                    // },function(res) {
+                    //     console.log(res, "2222222222")
+                    //     // 响应错误回调
+                    // })
                     this.$router.push({ name: "Home", query: { msg: '欢迎来到东临宗' } });//利用路由跳转页面，path为你定义的路由配置中要跳转页面的path
                     //const new1 = this.$router.resolve({ name: "Home", query: { msg: '欢迎来到东临宗' } });
                     //window.open(new1.href, '_blank')
